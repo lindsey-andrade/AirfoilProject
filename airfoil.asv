@@ -1,0 +1,8 @@
+%% MechSolids Airfoil Project
+% Lindsey Andrade, Ambika Goel, Caleb Kissel
+
+rho =  1.225; % density of air kg/m3
+V = ; % airspeed
+F = ; % Force on wing
+l = F*cos(alpha); %lift
+C_lift = l/(.5 * rho *V^2*c); %coefficient of lift
