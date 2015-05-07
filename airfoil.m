@@ -25,15 +25,15 @@ alpha_initial = 0.1; %initial angle of attack in radians
 % 
 % % 1cm shelled hollow wing
 % [X3, T3, Phi3, PhiTotal3, LiftForce3, disp3, FOS3] = calculation(20.4123, 0.0016, 0.0016, 0, 10, 1, 0.4679);
-% 
-% % 6cm shelled 3m cord
-% [X4, T4, Phi4, PhiTotal4, LiftForce4, disp4, FOS4] = calculation(61.2347, 0.2275, 0.2275, 0, 10, 3, 1.4598);
-% 
-% % 3m cord, solid wing
-% [X5, T5, Phi5, PhiTotal5, LiftForce5, disp5, FOS5] = calculation(61.2347, 0.3731, 0.3731, 0, 10, 3, 1.4598);
-% 
-% % 5cm shelled 3m cord
-% [X6, T6, Phi6, PhiTotal6, LiftForce6, disp6, FOS6] = calculation(61.2347, 0.1987,  0.1987, 0, 10, 3, 1.4598);
+
+% 6cm shelled 3m cord
+[X4, T4, Phi4, PhiTotal4, LiftForce4, disp4, FOS4] = calculation(61.2347, 0.2275, 0.2275, 0.2234, 10, 3, 1.4598);
+
+% 3m cord, solid wing
+[X5, T5, Phi5, PhiTotal5, LiftForce5, disp5, FOS5] = calculation(61.2347, 0.3731, 0.3731,  0.3676, 10, 3, 1.4598);
+
+% 5cm shelled 3m cord
+[X6, T6, Phi6, PhiTotal6, LiftForce6, disp6, FOS6] = calculation(61.2347, 0.1987,  0.1987, 0.1950, 10, 3, 1.4598);
 
 % 4cm shelled 3m cord
 [X7, T7, Phi7, PhiTotal7, LiftForce7, disp7, FOS7] = calculation(61.2347, 0.1665,  0.1665, 0.1634, 10, 3, 1.4598);
@@ -64,18 +64,18 @@ alpha_initial = 0.1; %initial angle of attack in radians
 % xlabel('Position over length of wing (m)')
 % ylabel('Angular Displacement of the Wing (degrees)')
 % 
-% figure 
-% hold all
-% plot(X5, PhiTotal5*180/pi)
-% plot(X4, PhiTotal4*180/pi)
-% plot(X6, PhiTotal6*180/pi)
-% plot(X7, PhiTotal7*180/pi)
-% plot(X8, PhiTotal8*180/pi)
-% plot(X9, PhiTotal9*180/pi)
-% title('Twist of Wings, 3m Cord Length') 
-% legend( 'Solid Wing', '6cm Shelled Wing','5cm Shelled Wing', '4cm Shelled Wing', '3cm Shelled Wing', '2cm Shelled Wing', 'Location', 'Best')
-% xlabel('Position over length of wing (m)')
-% ylabel('Angular Displacement of the Wing (degrees)')
+figure 
+hold all
+plot(X5, PhiTotal5*180/pi)
+plot(X4, PhiTotal4*180/pi)
+plot(X6, PhiTotal6*180/pi)
+plot(X7, PhiTotal7*180/pi)
+plot(X8, PhiTotal8*180/pi)
+plot(X9, PhiTotal9*180/pi)
+title('Twist of Wings, 3m Cord Length') 
+legend( 'Solid Wing', '6cm Shelled Wing','5cm Shelled Wing', '4cm Shelled Wing', '3cm Shelled Wing', '2cm Shelled Wing', 'Location', 'Best')
+xlabel('Position over length of wing (m)')
+ylabel('Angular Displacement of the Wing (degrees)')
 
 figure
 hold all
