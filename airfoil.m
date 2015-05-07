@@ -8,11 +8,7 @@ close all
 % Constants 
 rho =  1.225; % density of air kg/m3
 V = 245; % airspeed m/s
-%A = 20.4124; % cross section of the wing (for lift)
 G = 24e9; %N/m^2 
-%J = 0.0046;
-%L = 10; % length of wing (m)
-%Izz =  0.0046;
 E = 68.9e9; 
 
 alpha_initial = 0.1; %initial angle of attack in radians
